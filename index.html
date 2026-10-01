@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help the Poor Family with Donation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-green-primary { background-color: #15803d; }
+    .text-green-primary { color: #15803d; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-green-700">Help the Poor Family</h1>
+      <div class="hidden md:flex space-x-6 font-medium">
+        <a href="#home" class="hover:text-green-600">Home</a>
+        <a href="#about" class="hover:text-green-600">About Us</a>
+        <a href="#donate" class="hover:text-green-600">Donate</a>
+        <a href="#contact" class="hover:text-green-600">Contact</a>
+      </div>
+      <a href="#donate" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-5 py-2 rounded-full shadow">DONATE NOW</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="bg-green-primary text-white py-20 text-center px-4">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Help the Poor. Change a Life.</h2>
+    <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">Your small contribution can bring food, water, education, shelter, and hope to families in need.</p>
+    <div class="flex justify-center gap-4 flex-wrap">
+      <a href="#donate" class="bg-orange-500 hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-lg text-lg shadow">Donate Now</a>
+      <a href="https://wa.me/923198388457" target="_blank" class="bg-white text-green-800 font-bold px-8 py-3 rounded-lg text-lg hover:bg-gray-100">Contact WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Official Identity Card -->
+  <section id="about" class="max-w-5xl mx-auto py-12 px-4">
+    <div class="bg-white p-6 md:p-8 rounded-xl shadow-md border-l-8 border-green-600">
+      <h3 class="text-2xl font-bold text-gray-900 mb-4">Official Organization Identity</h3>
+      <div class="space-y-2 text-gray-700">
+        <p><strong>Organization Name:</strong> Help the Poor Family with Donation</p>
+        <p><strong>Lead Coordinator:</strong> EHSAN SHARIF DANISH</p>
+        <p><strong>Office Address:</strong> Basti NAI Wala Shumali, Post Office Basira, Noor Kubra, District Muzaffargarh, Pakistan</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Donation Details Section -->
+  <section id="donate" class="bg-gray-100 py-16 px-4">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-green-800 mb-2">Authorized Banking & Financials</h2>
+      <p class="text-gray-600 mb-8">Send your donations directly using the official account details below.</p>
+
+      <div class="grid md:grid-cols-2 gap-6 text-left">
+        <!-- Bank Transfer -->
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-200">
+          <h3 class="text-xl font-bold text-green-700 mb-4">Bank Transfer (Meezan Bank)</h3>
+          <p class="mb-1"><strong>Bank:</strong> Meezan Bank</p>
+          <p class="mb-1"><strong>Account Title:</strong> EHSAN SHARIF DANISH</p>
+          <p class="mb-4"><strong>IBAN:</strong> <span id="ibanText" class="font-mono bg-gray-100 p-1 rounded break-all">PK78 MEZN 0068 0201 1566 1223</span></p>
+          <div class="flex gap-2 flex-wrap">
+            <button onclick="copyToClipboard('PK78 MEZN 0068 0201 1566 1223')" class="bg-green-700 hover:bg-green-800 text-white px-4 py-2 rounded text-sm font-semibold">Copy IBAN</button>
+            <button onclick="copyToClipboard('0068020115661223')" class="bg-gray-800 hover:bg-gray-900 text-white px-4 py-2 rounded text-sm font-semibold">Copy Account Number</button>
+          </div>
+        </div>
+
+        <!-- Easypaisa -->
+        <div class="bg-white p-6 rounded-xl shadow border border-gray-200">
+          <h3 class="text-xl font-bold text-emerald-600 mb-4">Easypaisa Mobile Account</h3>
+          <p class="mb-1"><strong>Account Title:</strong> EHSAN SHARIF DANISH</p>
+          <p class="mb-4"><strong>Easypaisa Number:</strong> <span id="epText" class="font-mono bg-gray-100 p-1 rounded">+92 319 8388457</span></p>
+          <button onclick="copyToClipboard('+923198388457')" class="bg-emerald-600 hover:bg-emerald-700 text-white px-4 py-2 rounded text-sm font-semibold">Copy Easypaisa Number</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-gray-900 text-gray-300 py-10 px-4">
+    <div class="max-w-5xl mx-auto text-center space-y-4">
+      <h3 class="text-xl font-bold text-white">Help the Poor Family with Donation</h3>
+      <p>Lead Coordinator: EHSAN SHARIF DANISH</p>
+      <p>Office: Basti NAI Wala Shumali, Post Office Basira, Noor Kubra, District Muzaffargarh, Pakistan</p>
+      <p>WhatsApp: +92 319 8388457</p>
+      <p class="text-sm text-gray-500 pt-4">&copy; 2026 Help the Poor Family with Donation. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/923198388457?text=Assalam-o-Alaikum,%20I%20would%20like%20to%20know%20more%20about%20Help%20the%20Poor%20Family%20with%20Donation%20and%20how%20I%20can%20donate." 
+     target="_blank" 
+     class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg text-2xl flex items-center justify-center z-50">
+     💬
+  </a>
+
+  <script>
+    function copyToClipboard(text) {
+      navigator.clipboard.writeText(text);
+      alert('Copied: ' + text);
+    }
+  </script>
+</body>
+</html>
